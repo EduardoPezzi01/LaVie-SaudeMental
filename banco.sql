@@ -14,7 +14,6 @@ CREATE TABLE pacientes(
     id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     email VARCHAR(155) NOT NULL,
-    senha VARCHAR(155) NOT NULL,
     data_nascimento DATE NOT NULL
 );
 
