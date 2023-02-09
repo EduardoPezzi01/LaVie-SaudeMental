@@ -45,7 +45,7 @@ module.exports = {
 
         } catch (error) {
             console.log(error.message);
-            res.status(500).json({ error: "Houve um erro ao cadastrar suas informações, tente novamente :((" })
+            res.status(500).json({ error: "Erro ao cadastrar suas informações, tente novamente" })
         }
 
     },
@@ -63,7 +63,7 @@ module.exports = {
 
         if (!paciente){
             res.statusCode = 404;
-            res.json({ message: "não é possível atualizar um cadastro que não existe :(" })
+            res.json({ message: "não é possível atualizar um cadastro que não existe:" })
         }
         
         await paciente.update({ nome, idade })
@@ -89,7 +89,7 @@ module.exports = {
 
         if (!paciente){
             res.statusCode = 404;
-            res.json({ message: "não é possível deletar um paciente que não existe :(" })
+            res.json({ message: "não é possível deletar um paciente que não existe" })
             return;
         }
         
